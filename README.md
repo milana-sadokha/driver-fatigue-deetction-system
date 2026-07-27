@@ -34,6 +34,7 @@ Fatigue is a factor in 10-20% of road accidents. Most commercial driver monitori
 * Time-window buffers filter out false positives from brief, natural head movements.
 * **Multi-threaded architecture** — audio analysis runs on a background thread and never blocks video processing.
 
+![Data pipelines](assets/flowchart.png)
 ---
 
 ## Why a custom CNN instead of a pretrained model (VGG16, etc.)
