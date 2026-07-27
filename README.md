@@ -106,6 +106,16 @@ The 70/20/10 train/validation/test split for the vision pipeline ensures the fin
 
 ## Treining curves
 
+### 1. Eyelid State Classifier
+![Eyelid State Classifier Training Metrics](assets/eye_model_res.png)
+
+### 2. Visual Yawn Classifier
+![Visual Yawn Classifier Training Metrics](assets/visual_yawn_res.png)
+
+### 3. Audio Yawn Classifier
+![Audio Yawn Classifier Training Metrics](assets/audio_yawn_res.png)
+
+
 ---
 
 ## Interface preview 
@@ -132,9 +142,10 @@ The overlay shows live classification scores, head-pose values, and buffer count
 
 ## Setup
 
+Due to specific library version requirements, it is highly recommended to use the provided requirements.txt or install dependencies matching the exact versions below:
 
 ```text
-pip install -r requirements.txt
+pip install "tensorflow>=2.16,<2.17" "mediapipe==0.10.21" -r requirements.txt
 python app/main.py
 ```
 
@@ -143,4 +154,3 @@ python app/main.py
 ## Limitations and future work
 
 
-assets/         diagrams, screenshots, training curves
